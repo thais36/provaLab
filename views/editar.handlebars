@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Tela de Edição</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tela de Edição</h1>
+        <form action="/atualizar" method="POST"> <!-- Ação para o POST /atualizar -->
+            <input type="hidden" name="id" value="{{id}}"> <!-- Campo oculto para o ID -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome" value="{{nome}}" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite o endereço" value="{{endereco}}" required>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Digite o bairro" value="{{bairro}}" required>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP" value="{{cep}}" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a cidade" value="{{cidade}}" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite o estado" value="{{estado}}" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite o telefone" value="{{telefone}}" required>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
